@@ -1,7 +1,10 @@
-models = []
+from typing import Callable
 
 
-def up():
+models: list = []
+
+
+def up() -> None:
     for model in models:
         print(f'🛠️\tCreating a table for {model.table_name}...')
         model.up()
@@ -9,7 +12,7 @@ def up():
     print('✅\tMigration is complete', end='\n\n')
 
 
-def down():
+def down() -> None:
     for model in reversed(models):
         print(f'🗑️\tDeleting a table with {model.table_name}...')
         model.down()
@@ -17,7 +20,7 @@ def down():
     print('✅\tRollback is complete', end='\n\n')
 
 
-def reset():
+def reset() -> None:
     down()
     up()
 
