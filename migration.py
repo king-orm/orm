@@ -1,35 +1,4 @@
-from models.manufacturer import Manufacturer
-from models.plane_type import PlaneType
-from models.plane import Plane
-from models.airline import Airline
-from models.country import Country
-from models.city import City
-from models.airport import Airport
-from models.regular_flight import RegularFlight
-from models.scheduled_flight import ScheduledFlight
-from models.scheduled_flight_service_zone import ScheduledFlightServiceZone
-from models.passenger import Passenger
-from models.ticket import Ticket
-from models.service_level import ServiceLevel
-from models.plane_service_zone import PlaneServiceZone
-
-
-models = [
-    Manufacturer,
-    PlaneType,
-    Plane,
-    Airline,
-    Country,
-    City,
-    Airport,
-    RegularFlight,
-    ScheduledFlight,
-    ScheduledFlightServiceZone,
-    Passenger,
-    Ticket,
-    ServiceLevel,
-    PlaneServiceZone
-]
+models = []
 
 
 def up():
