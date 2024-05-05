@@ -1,7 +1,5 @@
 import re
-from jethive.strings import pluralize
 from datetime import datetime
-from jethive.database.connection import default_connection as connection
 
 
 column_definition_prefix = 'c_'
