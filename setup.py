@@ -16,6 +16,7 @@ setup(
     author_email='contact@anafro.ru',
     license='MIT',
     packages=find_packages(),
+    install_requires=[],
 
     classifiers=[
         'Development Status :: 1 - Planning',
