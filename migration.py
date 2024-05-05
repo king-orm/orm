@@ -1,7 +1,7 @@
-from typing import Callable
+from typing import Callable, List
 
 
-models: list = []
+models: List[str] = []
 
 
 def up() -> None:
@@ -25,7 +25,7 @@ def reset() -> None:
     up()
 
 
-def playground(function):
+def playground(function) -> Callable:
     def playground_function_wrapper(*args, **kwargs):
         reset()
         function(*args, **kwargs)
