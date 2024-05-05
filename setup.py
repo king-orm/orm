@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 
 with open("README.md", "r") as readme:
-    long_description = readme.read()
+    readme_contents = readme.read()
 
 
 setup(
     name='kingorm',
     version='1.0.0',    
     description='King is an ORM for Python and SQLite. It is designed to be a lightweight solution for simple programs, where objects have to be stored. A programmer just needs to define fields in the model classes and that\'s it!',
-    long_description=long_description,
+    long_description=readme_contents,
     long_description_content_type="text/markdown",
     url='https://github.com/king-orm/orm/',
     author='Anatoly Frolov',
